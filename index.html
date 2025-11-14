@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Demo — Mẫu Coursera Lab</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Portfolio demo built from a template — includes W3 validation placeholder, responsiveness, and styled CSS files.">
+</head>
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Đức Lợi</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navmenu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about">Giới thiệu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Dự án</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
+          <li class="nav-item ms-2">
+            <button id="themeToggle" class="btn btn-outline-secondary btn-sm">Dark</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="py-5 bg-primary text-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7">
+          <h1 class="display-6 fw-bold">Đức Lợi — Frontend Developer</h1>
+          <p class="lead">Mẫu portfolio demo cho bài nộp Coursera Lab. Tuân thủ W3, responsive và có CSS riêng.</p>
+          <p>
+            <a href="#projects" class="btn btn-light btn-lg me-2">Xem dự án</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">Liên hệ</a>
+          </p>
+        </div>
+        <div class="col-md-5 text-center">
+          <!-- AVATAR ĐÃ SỬA -->
+          <img src="C:\Users\ADMIN\Pictures\img.jpg"
+               class="rounded-circle img-fluid border border-white"
+               alt="Avatar">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="h3 mb-3">Giới thiệu</h2>
+      <div class="row">
+        <div class="col-lg-8">
+          <p>Mô tả ngắn về bạn, kỹ năng, công nghệ: HTML, CSS, JavaScript, Bootstrap. Thay đổi từ mẫu: màu chủ đạo, font-size, và bố cục project grid.</p>
+          <ul>
+            <li>W3 Validation: <em>chụp màn hình validator hoặc link validator sẽ được đính kèm trong bài nộp</em></li>
+            <li>Responsive evidence: <em>chụp màn hình mobile/tablet/desktop</em></li>
+            <li>CSS files included: <code>styles.css</code></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Thông tin nhanh</h5>
+              <p class="mb-1"><strong>Email:</strong> you@example.com</p>
+              <p class="mb-0"><strong>Địa điểm:</strong> Thành phố, Quốc gia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-5 bg-white">
+    <div class="container">
+      <div class="d-flex align-items-center mb-3">
+        <h2 class="h3 me-auto">Dự án</h2>
+        <div class="btn-group" role="group" aria-label="Project filters">
+          <button class="btn btn-outline-primary btn-sm filter-btn active" data-filter="all">Tất cả</button>
+          <button class="btn btn-outline-primary btn-sm filter-btn" data-filter="web">Web</button>
+          <button class="btn btn-outline-primary btn-sm filter-btn" data-filter="ui">UI</button>
+          <button class="btn btn-outline-primary btn-sm filter-btn" data-filter="other">Khác</button>
+        </div>
+      </div>
+
+      <div id="projectsGrid" class="row gy-4">
+
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-4 project-item" data-tags="web">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?w=1200&q=80"
+                 class="card-img-top project-thumb" alt="Project 1">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Project 1 - Trang web bán hàng</h5>
+              <p class="card-text flex-grow-1">Mô tả ngắn: dùng Bootstrap, responsive, form checkout demo.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <a href="#" class="btn btn-primary btn-sm view-project"
+                   data-title="Project 1"
+                   data-img="https://images.unsplash.com/photo-1551033406-611cf9a28f67?w=1600&q=80">Xem</a>
+                <small class="text-muted">Web • 2025</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-4 project-item" data-tags="ui">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&q=80"
+                 class="card-img-top project-thumb" alt="Project 2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Project 2 - Thiết kế UI</h5>
+              <p class="card-text flex-grow-1">Mô tả: tập trung vào accessibility và pattern reusable.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <a href="#" class="btn btn-primary btn-sm view-project"
+                   data-title="Project 2"
+                   data-img="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600&q=80">Xem</a>
+                <small class="text-muted">UI • 2024</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-4 project-item" data-tags="other">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=1200&q=80"
+                 class="card-img-top project-thumb" alt="Project 3">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Project 3 - Tool nội bộ</h5>
+              <p class="card-text flex-grow-1">Mô tả: script tự động hoá, cập nhật dữ liệu.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <a href="#" class="btn btn-primary btn-sm view-project"
+                   data-title="Project 3"
+                   data-img="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=1600&q=80">Xem</a>
+                <small class="text-muted">Tool • 2023</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox modal -->
+  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-body p-0">
+          <div class="ratio ratio-16x9">
+            <img id="lightboxImage" src="" alt="Project large view" class="img-fluid rounded">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between bg-white">
+          <h5 id="lightboxTitle" class="m-0"></h5>
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="h3 mb-3">Liên hệ</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <form id="contactForm" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Tên</label>
+              <input id="name" class="form-control" type="text" required>
+              <div class="invalid-feedback">Vui lòng nhập tên của bạn.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" class="form-control" type="email" required>
+              <div class="invalid-feedback">Vui lòng nhập email hợp lệ.</div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Tin nhắn</label>
+              <textarea id="message" class="form-control" rows="5" required></textarea>
+              <div class="invalid-feedback">Vui lòng nhập tin nhắn.</div>
+            </div>
+            <button class="btn btn-primary" type="submit">Gửi</button>
+            <div id="contactStatus" class="mt-3" aria-live="polite"></div>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <p>Hoặc gửi email trực tiếp tới <a href="mailto:you@example.com">you@example.com</a></p>
+          <p>Links: <a href="#" target="_blank">Live site (placeholder)</a> • <a href="#" target="_blank">Repo (placeholder)</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-3 bg-dark text-white">
+    <div class="container text-center small">
+      © <span id="year"></span> Tên Bạn • Đã tạo từ mẫu • <a href="#about" class="text-white">Chi tiết thay đổi</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

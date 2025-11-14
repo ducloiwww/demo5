@@ -1,0 +1,70 @@
+/* styles.css - main styling */
+/* Use readable variable names and comments for important sections */
+
+/* Root color variables (easy to customize) */
+:root{
+  --primary:#0d6efd; /* Bootstrap primary */
+  --bg:#f8f9fa;
+  --text:#212529;
+  --card-radius:12px;
+}
+
+/* Dark theme variables (applied by .dark-theme on body) */
+body.dark-theme{
+  background:#0b1220;
+  color:#e6eef8;
+}
+body.dark-theme .navbar,
+body.dark-theme .card,
+body.dark-theme .modal-footer{
+  background:#08101a !important;
+  color:#e6eef8;
+}
+body.dark-theme .btn-outline-secondary{ color:#e6eef8; border-color:#6c757d; }
+
+/* Basic page styles */
+body{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.6;
+}
+
+/* Rounded cards */
+.card{
+  border-radius:var(--card-radius);
+}
+
+/* Hero customizations */
+header.bg-primary{
+  background: linear-gradient(135deg, #0d6efd 0%, #5aa0ff 100%);
+}
+header .display-6{
+  color: #fff;
+}
+
+/* Project thumbnails: consistent height with object-fit */
+.project-thumb{
+  height:200px;
+  object-fit:cover;
+}
+
+/* Footer small adjustments */
+footer{
+  font-size:0.9rem;
+}
+
+/* Accessibility: focus states */
+a:focus, button:focus, input:focus, textarea:focus{
+  outline:3px solid rgba(13, 110, 253, 0.25);
+  outline-offset:2px;
+}
+
+/* Responsive tweak: reduce hero image on small screens */
+@media (max-width:576px){
+  header .display-6{ font-size:1.6rem; }
+  .project-thumb{ height:160px; }
+}
+
+/* Small utility */
+.hidden { display:none !important; }
